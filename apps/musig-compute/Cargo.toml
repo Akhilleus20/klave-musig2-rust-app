@@ -1,0 +1,25 @@
+[package]
+name = "musig-compute"
+version = "0.0.1"
+edition = "2021"
+
+[dependencies]
+wit-bindgen-rt = { version = "0.39.0", features = ["bitflags"] }
+klave = "0.3.0"
+musig2 = {version = "0.2.4", default-features = false, features = ["secp256k1","serde"]}
+serde_json = "1.0.117"
+serde = "1.0.218"
+hex = "0.4.3"
+sha2 = "0.10.8"
+
+[lib]
+crate-type = ["cdylib"]
+
+[package.metadata.component]
+package = "component:musig-compute"
+
+[profile.release]
+lto = true
+# Tell `rustc` to optimize for small code size.
+opt-level = "s"
+strip = true

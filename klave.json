@@ -1,0 +1,20 @@
+{
+    "version": "1",
+    "branches": [
+      "*"
+    ],
+    "applications": [
+      {
+        "name": "musig-wallet",
+        "description": "Wallet for Musig2 demonstration",
+        "version": "0.1.0",
+        "rootDir": "/apps/musig-wallet"
+      },
+      {
+        "name": "musig-compute",
+        "description": "Single aggregator for Musig2 demonstration",
+        "version": "0.1.0",
+        "rootDir": "/apps/musig-wallet"
+      }
+    ]
+  }

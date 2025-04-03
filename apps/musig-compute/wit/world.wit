@@ -1,0 +1,12 @@
+package component:musig-compute;
+
+/// An example world for the component to target.
+world musig-compute {
+    export register-routes: func();
+    export initiate-musig-context: func(cmd: string);
+    export load-musig-session-ids: func(cmd: string);
+    export load-musig-session: func(cmd: string);
+    export submit-pub-nonce: func(cmd: string);
+    export submit-partial-signature: func(cmd: string);
+    export get-final-signature: func(cmd: string);
+}

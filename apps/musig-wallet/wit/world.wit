@@ -1,0 +1,24 @@
+package component:musig-wallet;
+
+/// template world for the component to target.
+world musig-wallet {
+    export register-routes: func();
+    export register-user: func(cmd: string);
+    export load-current-user: func(cmd: string);
+    export is-registered: func(cmd: string);
+    export get-all-users: func(cmd: string);
+    export create-key: func(cmd: string);
+    export load-keys: func(cmd: string);
+    //for debug purpose
+    export load-key-name-ids: func(cmd: string);
+    export load-key-pair: func(cmd: string);
+    export create-musig-session-definition: func(cmd: string);
+    export load-musig-session-ids: func(cmd:string);
+    export update-musig-user-public-key: func(cmd:string);
+    export load-musig-session: func(cmd:string);
+    export update-musig-aggregation-session: func(cmd:string);
+
+    export create-public-nonce: func(cmd:string);
+    export create-partial-signature: func(cmd:string);
+    export verify-final-signature: func(cmd:string);
+}
