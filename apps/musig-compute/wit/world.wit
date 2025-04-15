@@ -4,6 +4,7 @@ package component:musig-compute;
 world musig-compute {
     export register-routes: func();
     export initiate-musig-context: func(cmd: string);
+    export initiatemusigcontext: func(cmd: string);
     export load-musig-session-ids: func(cmd: string);
     export load-musig-session: func(cmd: string);
     export submit-pub-nonce: func(cmd: string);

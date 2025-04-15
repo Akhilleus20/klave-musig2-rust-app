@@ -11,6 +11,7 @@ impl Guest for Component {
 
     fn register_routes(){
         klave::router::add_user_transaction("initiate-musig-context");
+        klave::router::add_user_transaction("initiatemusigcontext");
         klave::router::add_user_transaction("test-set-vec");
         klave::router::add_user_query("load-musig-session-ids");
         klave::router::add_user_transaction( "load-musig-session");
