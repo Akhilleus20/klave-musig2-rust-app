@@ -24,6 +24,10 @@ impl Guest for Component {
         musig_agg::initiate_musig_context(cmd);
     }
 
+    fn initiatemusigcontext(cmd: String){
+        musig_agg::initiate_musig_context(cmd);
+    }
+
     fn load_musig_session_ids(_cmd: String){
         musig_agg::load_musig_session_ids(_cmd);
     }
