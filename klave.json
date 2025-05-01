@@ -14,7 +14,7 @@
         "name": "musig-compute",
         "description": "Single aggregator for Musig2 demonstration",
         "version": "0.1.0",
-        "rootDir": "/apps/musig-wallet"
+        "rootDir": "/apps/musig-compute"
       }
     ]
   }
